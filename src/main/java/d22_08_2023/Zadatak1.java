@@ -23,7 +23,7 @@ public class Zadatak1 {
             suma = suma + broj;
             if (suma >= 100){
                 do100 = true;
-                poruka = "Prekoracenje! Kraj programa. Sracunata suma je " + suma + ".";
+                poruka = "Prekoracenje! Kraj programa. Sracunata suma je " + (suma - broj) + ".";
             }
 
         }
