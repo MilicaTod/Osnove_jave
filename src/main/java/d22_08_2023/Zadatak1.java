@@ -10,7 +10,7 @@ public class Zadatak1 {
     //Unesite vrednost: 50
     //Prekoracenje! Kraj programa. Sracunata suma je 70.
     public static void main(String[] args) {
-
+//If suma + broj > 100 prekida se petlja, a tek u else onda staviš suma = suma + broj; ne pre toga
         Scanner s = new Scanner(System.in);
         int broj = 0;
         int suma = 0;
@@ -20,11 +20,10 @@ public class Zadatak1 {
         while (!do100) {
             System.out.print("Unesite vrednost: ");
             broj = s.nextInt();
-            suma = suma + broj;
-            if (suma >= 100){
+            if (suma + broj > 100){
                 do100 = true;
-                poruka = "Prekoracenje! Kraj programa. Sracunata suma je " + (suma - broj) + ".";
-            }
+                poruka = "Prekoracenje! Kraj programa. Sracunata suma je " + suma + ".";
+            }else { suma= suma + broj;}
 
         }
         System.out.println(poruka);
